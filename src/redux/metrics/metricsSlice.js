@@ -1,36 +1,36 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_URL = 'https://www.arbeitnow.com/api/job-board-api';
+const API_URL = 'https://myvaccination-backend.vercel.app/api/pop';
 const initialState = {
-  jobs: [],
+  metrics: [],
   status: 'idle',
   error: null,
 };
-export const fetchJobs = createAsyncThunk('Jobs/fetchJobs', async () => {
+export const fetchMetrics = createAsyncThunk('metrics/fetchMetrics', async () => {
   const response = await axios.get(`${API_URL}`);
   console.log(response.data);
   return response.data;
 });
-const jobsSlice = createSlice({
-  name: 'jobs',
+const metricsSlice = createSlice({
+  name: 'metrics',
   initialState,
   reducers: {
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchJobs.pending, (state) => {
+      .addCase(fetchMetrics.pending, (state) => {
         state.status = 'loading';
       })
-      .addCase(fetchJobs.fulfilled, (state, action) => {
+      .addCase(fetchMetrics.fulfilled, (state, action) => {
         state.status = 'succeeded';
         console.log({ action });
-        state.jobs = action.payload.data;
+        state.metrics = action.payload.modifiedData;
       })
-      .addCase(fetchJobs.rejected, (state, action) => {
+      .addCase(fetchMetrics.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.error.message;
       });
   },
 });
-export default jobsSlice.reducer;
+export default metricsSlice.reducer;

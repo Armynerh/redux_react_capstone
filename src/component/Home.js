@@ -1,8 +1,8 @@
-import Categories from './Jobs';
+import Metrics from './Metrics';
 
 const Home = () => (
   <>
-    <Categories />
+    <Metrics />
   </>
 );
 

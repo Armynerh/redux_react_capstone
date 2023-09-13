@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import jobsReducer from './jobs/jobsSlice';
+import metricsReducer from './metrics/metricsSlice';
 
 const store = configureStore({
   reducer: {
-    jobs: jobsReducer,
+    metrics: metricsReducer,
   },
 });
 export default store;

@@ -5,3 +5,15 @@ a {
 ul {
   list-style-type: none;
 }
+
+body {
+  background: #5688E5;
+}
+
+.color1 {
+  background: #2e58a5;
+}
+
+.color2 {
+  background: #173062;
+}

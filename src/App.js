@@ -12,7 +12,7 @@ function App() {
       errorElement: <ErrorPage />,
     },
     {
-      path: '/job/:jobId',
+      path: '/metric/:metricId',
       element: <Details />,
       errorElement: <ErrorPage />,
     },
