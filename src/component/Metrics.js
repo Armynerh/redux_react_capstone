@@ -5,12 +5,10 @@ import { fetchMetrics } from '../redux/metrics/metricsSlice';
 
 const Metrics = () => {
   const [query, setQuery] = useState('');
-  const state = useSelector((state) => state);
   const metrics = useSelector((state) => state.metrics.metrics);
   const status = useSelector((state) => state.metrics.status);
   const error = useSelector((state) => state.metrics.error);
   const dispatch = useDispatch();
-  console.log({ state });
   const met = metrics.filter((metric) => metric.stateName.toLowerCase().includes(query));
   useEffect(() => {
     if (status === 'idle') {

@@ -10,9 +10,6 @@ const Details = () => {
   const metrics = useSelector((state) => state.metrics.metrics);
   const metric = metrics.filter((met) => (met.total === Number(slug)));
   const dispatch = useDispatch();
-  console.log({
-    slug, location, metric, metrics,
-  });
 
   useEffect(() => {
     if (!metrics.length) {

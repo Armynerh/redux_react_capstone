@@ -12,7 +12,7 @@ describe('metricsSlice Reducer', () => {
 
     const newState = metricsReducer(
       initialState,
-      fetchMetrics.fulfilled(mockResponseData)
+      fetchMetrics.fulfilled(mockResponseData),
     );
 
     expect(newState.status).toEqual('succeeded');
@@ -29,7 +29,7 @@ describe('metricsSlice Reducer', () => {
 
     const newState = metricsReducer(
       initialState,
-      fetchMetrics.pending
+      fetchMetrics.pending,
     );
 
     expect(newState.status).toEqual('loading');
@@ -47,7 +47,7 @@ describe('metricsSlice Reducer', () => {
 
     const newState = metricsReducer(
       initialState,
-      fetchMetrics.rejected(errorMessage)
+      fetchMetrics.rejected(errorMessage),
     );
 
     expect(newState.status).toEqual('failed');

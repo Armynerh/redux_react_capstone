@@ -32,7 +32,7 @@ describe('Details Component', () => {
             <Route path="/details/:slug" element={<Details />} />
           </Routes>
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     // Use waitFor to wait for asynchronous actions to complete
@@ -65,7 +65,7 @@ describe('Details Component', () => {
             <Route path="/details/:slug" element={<Details />} />
           </Routes>
         </MemoryRouter>
-      </Provider>
+      </Provider>,
     );
 
     // Ensure that the component handles the case of no matching data by not rendering anything
