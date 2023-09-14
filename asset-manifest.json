@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/redux_react_capstone/static/css/main.cde27e3a.css",
+    "main.js": "/redux_react_capstone/static/js/main.412ad7b0.js",
+    "index.html": "/redux_react_capstone/index.html",
+    "main.cde27e3a.css.map": "/redux_react_capstone/static/css/main.cde27e3a.css.map",
+    "main.412ad7b0.js.map": "/redux_react_capstone/static/js/main.412ad7b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cde27e3a.css",
+    "static/js/main.412ad7b0.js"
+  ]
+}
