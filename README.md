@@ -2,7 +2,7 @@
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
 
 
-  <h3><b>Job Metrics App</b></h3>
+  <h3><b> Metrics App</b></h3>
 
 </div>
 
@@ -31,10 +31,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Job Metrics App <a name="about-project"></a>
+# 📖 Metrics App <a name="about-project"></a>
 
 
-**[Job Metrics App]**  is a project to consolidate your knowledge about React, components, props, state, and hooks, by building a react bookstore CMS
+**[ Metrics App]**  is a project to consolidate your knowledge about React, components, props, state, and hooks, by building a react Numerical metrics App
 
 ## 🛠 Built With <a name="built-with"></a>
 
