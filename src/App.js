@@ -12,7 +12,7 @@ function App() {
       errorElement: <ErrorPage />,
     },
     {
-      path: '/metric/:metricId',
+      path: '/metric/:slug',
       element: <Details />,
       errorElement: <ErrorPage />,
     },
